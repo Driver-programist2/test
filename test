@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#0f0f1a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Kinowalk">
+    <link rel="manifest" href="/tv-static/manifest.json">
+    <link rel="apple-touch-icon" href="/tv-static/images/icon-192.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinowalk_tv — смотреть онлайн бесплатно, прямой эфир</title>
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=104014182', 'ym');
+        ym(104014182, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/104014182" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <meta name="description" content="Смотрите Kinowalk_tv онлайн в хорошем качестве. ⭐️ Топ каналы в прямом эфире онлайн бесплатно.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://kinowalk.hopto.org/tv-static/css/style.css?v=1.8">
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Kinowalk_tv — смотреть онлайн",
+  "description": "Прямая трансляция Kinowalk_tv. Смотрите онлайн бесплатно.",
+  "thumbnailUrl": "http://kinowalk.hopto.org/static-content/logo/370?unique=2026-08-22+02%3A23%3A45.911848&access_token=d28a4b8e-a3c2-497b-8547-0754c45dadea",
+  "contentUrl": "https://kinowalk.hopto.org/tv/watch/kinowalk",
+  "uploadDate": "2026-10-24T10:13:33.510324Z",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kinowalk"
+  },
+  "potentialAction": {
+    "@type": "WatchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://kinowalk.hopto.org/tv/watch/kinowalk",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform"
+      ]
+    },
+    "actionAccessibilityRequirement": {
+      "@type": "ActionAccessSpecification",
+      "category": "free",
+      "availabilityStarts": "2026-10-24T10:13:33.510324Z",
+      "availabilityEnds": "2026-10-26T10:13:33.510324Z",
+      "requiresSubscription": {
+        "@type": "MediaSubscription",
+        "name": "Free"
+      }
+    }
+  }
+}</script>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kinowalk">
+    <meta property="og:title" content="Kinowalk_tv — смотреть онлайн">
+    <meta property="og:description" content="Смотрите Kinowalk_tv онлайн в хорошем качестве. Прямой эфир бесплатно.">
+    <meta property="og:url" content="https://kinowalk.hopto.org/tv/watch/kinowalk">
+    <meta property="og:image" content="http://kinowalk.hopto.org/static-content/logo/370?unique=2026-08-22+02%3A23%3A45.911848&amp;access_token=d28a4b8e-a3c2-497b-8547-0754c45dadea">
+    <meta property="og:image:alt" content="Kinowalk_tv">
+    <meta name="twitter:card" content="summary">
+    <style>
+        .watch-page { max-width: 1400px; margin: 0 auto; padding: 20px 24px; }
+        .watch-layout {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            grid-template-rows: auto auto;
+            gap: 24px;
+            align-items: stretch;
+        }
+        .watch-sidebar {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            align-self: stretch;
+            contain: size;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 0;
+        }
+        .sidebar-header {
+            flex-shrink: 0;
+            padding: 16px 16px 12px;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--border);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+
+        .watch-sidebar::-webkit-scrollbar { display: none; }
+        .sidebar-list {
+            flex: 1 1 auto;
+            min-height: 0;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: var(--border) transparent;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: 4px 8px 12px;
+        }
+
+        .sidebar-list::-webkit-scrollbar { width: 6px; }
+        .sidebar-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+        .live-badge-side {
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            width: 8px;
+            height: 8px;
+            background: #ef4444;
+            border-radius: 50%;
+            box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+            animation: pulse-live 2s infinite;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        @keyframes pulse-live {
+            0%   { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+            70%  { box-shadow: 0 0 0 6px rgba(239, 68, 68, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+        .sidebar-channel {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+        .sidebar-channel:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--border);
+        }
+        .sidebar-channel.active {
+            background: rgba(99, 102, 241, 0.12);
+            border-color: rgba(99, 102, 241, 0.35);
+        }
+        .sidebar-channel.active .sidebar-channel-name {
+            color: var(--accent-hover);
+            font-weight: 600;
+        }
+        .sidebar-channel img {
+            width: 40px; height: 40px;
+            border-radius: 8px; object-fit: cover;
+            background: var(--bg-secondary);
+            flex-shrink: 0;
+        }
+        .sidebar-channel-name {
+            font-size: 13px; font-weight: 500;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+            line-height: 1.3;
+        }
+        .player-section {
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
+            max-width: 920px;
+            width: 100%;
+        }
+        .watch-bottom {
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+            max-width: 920px;   /* ← как у плеера */
+            width: 100%;        /* ← как у плеера */
+        }
+        .player-box {
+            background: #000;
+            border-radius: 16px;
+            overflow: hidden;
+            aspect-ratio: 16/9;
+            position: relative;
+            border: 1px solid var(--border);
+        }
+        .player-box iframe {
+            position: absolute; inset: 0;
+            width: 100%; height: 100%;
+            border: none;
+        }
+        .nav-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .nav-group { display: flex; gap: 10px; align-items: center; }
+        .nav-btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 10px 18px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 14px; font-weight: 500;
+            transition: all 0.2s; cursor: pointer;
+        }
+        .nav-btn:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--accent);
+        }
+        .nav-btn.disabled {
+            opacity: 0.35; pointer-events: none;
+        }
+        .nav-btn.primary {
+            background: var(--accent);
+            border-color: var(--accent);
+        }
+        .nav-btn.primary:hover {
+            background: var(--accent-hover);
+        }
+        .channel-info {
+            margin-top: 20px;
+            padding: 20px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            display: flex; align-items: center; gap: 16px;
+        }
+        .channel-info img {
+            width: 64px; height: 64px;
+            border-radius: 12px; object-fit: cover;
+            flex-shrink: 0;
+        }
+        .channel-info-text h1 {
+            font-size: 22px; font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .channel-info-text p {
+            color: var(--text-muted); font-size: 14px;
+        }
+        .back-bar { margin-bottom: 16px; }
+        .back-link {
+            display: inline-flex; align-items: center; gap: 8px;
+            color: var(--text-secondary); text-decoration: none;
+            font-size: 14px; font-weight: 500;
+        }
+        .back-link:hover { color: var(--text-primary); }
+        .share-dropdown { position: relative; display: inline-block; }
+        .share-menu {
+            position: absolute;
+            right: 0;
+            bottom: calc(100% + 8px);
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 6px;
+            min-width: 220px;
+            display: none;
+            z-index: 200;
+            box-shadow: var(--shadow);
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+        .share-menu.show { display: block; }
+        .share-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px;
+            border-radius: 8px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 14px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-family: inherit;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .share-item:hover { background: var(--bg-card-hover); }
+        .share-icon {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+        }
+        .share-item .share-icon { color: var(--text-secondary); }
+        #shareTelegram .share-icon { color: #229ed9; }
+
+        /* ===== Мобильная версия ===== */
+        @media (max-width: 768px) {
+            .watch-page { padding: 8px 12px; }
+            .watch-layout {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto auto;
+                gap: 8px;
+            }
+            .back-bar { margin-bottom: 8px; }
+            .back-link { font-size: 13px; }
+
+            .player-section {
+                grid-row: 1 / 2;
+                grid-column: 1 / 2;
+                max-width: 100%;
+            }
+            .player-box { border-radius: 12px; }
+
+            .watch-bottom {
+                grid-row: 2 / 3;
+                grid-column: 1 / 2;
+                max-width: 100%;
+            }
+            .nav-bar { gap: 6px; }
+            .nav-btn {
+                padding: 8px 14px;
+                font-size: 13px;
+                border-radius: 8px;
+            }
+
+            .channel-info { display: none; }
+            .watch-sidebar {
+                grid-row: 3 / 4;
+                grid-column: 1 / 2;
+                align-self: auto;
+                contain: none;
+                display: block;
+                max-height: 50vh;
+                overflow-y: auto;
+                margin-top: 4px;
+                border-radius: 12px;
+            }
+            .sidebar-list {
+                display: block;
+                min-height: auto;
+                overflow-y: visible;
+                flex: none;
+                padding: 2px 6px 8px;
+                gap: 2px;
+            }
+            .sidebar-header {
+                padding: 10px 12px 8px;
+                font-size: 11px;
+                letter-spacing: 0.5px;
+            }
+            .sidebar-channel {
+                padding: 6px 8px;
+                gap: 8px;
+                border-radius: 8px;
+            }
+            .sidebar-channel img {
+                width: 36px; height: 36px;
+                border-radius: 6px;
+            }
+            .sidebar-channel-name { font-size: 13px; }
+        }
+        @media (max-width: 480px) {
+            .watch-sidebar { border-radius: 12px; }
+            .sidebar-channel img { width: 44px; height: 44px; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="header-left">
+                <a href="/tv" class="logo"><span>Kinowalk</span></a>
+                <a href="https://t.me/kinowalk_tv" target="_blank" rel="noopener noreferrer" class="tg-link" aria-label="Наш Telegram">
+                    <svg class="tg-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                    </svg>
+                    <span class="tg-text">Telegram</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="watch-page">
+        <div class="back-bar">
+            <a href="/tv?category=1" class="back-link">← Назад к ⭐️ Топ</a>
+        </div>
+        <div class="watch-layout">
+            <aside class="watch-sidebar" id="watchSidebar">
+                <div class="sidebar-header">⭐️ Топ</div>
+                <div class="sidebar-list">
+                    
+                    <a href="/tv/watch/kinowalk"
+                       data-channel-id="kinowalk"
+                       class="sidebar-channel active">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/370?unique=2026-08-22+02%3A23%3A45.911848&amp;access_token=d28a4b8e-a3c2-497b-8547-0754c45dadea" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">Kinowalk_tv</span>
+                        
+                        <span class="live-badge-side" aria-label="Live"></span>
+                        
+                    </a>
+                    
+                    <a href="/tv/watch/paranormal404"
+                       data-channel-id="paranormal404"
+                       class="sidebar-channel ">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/394?unique=2026-09-20+06%3A39%3A16.755553&amp;access_token=49e74283-a599-4c9e-8b17-2e114a2bebfb" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">ПАРАНОРМАЛЬНЫЙ АРХИВ </span>
+                        
+                        <span class="live-badge-side" aria-label="Live"></span>
+                        
+                    </a>
+                    
+                    <a href="/tv/watch/scripachtv"
+                       data-channel-id="scripachtv"
+                       class="sidebar-channel ">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/134?unique=2026-07-25+13%3A55%3A22.216397&amp;access_token=0a12131f-650c-4909-9a02-ba9a6b511825" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">ScripachTV</span>
+                        
+                        <span class="live-badge-side" aria-label="Live"></span>
+                        
+                    </a>
+                    
+                    <a href="/tv/watch/yurich_kinomix"
+                       data-channel-id="yurich_kinomix"
+                       class="sidebar-channel ">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/121?unique=2026-07-24+07%3A18%3A08.849860&amp;access_token=1d582dcd-0d9f-4ce7-94b9-b85a9f3c6825" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">KinoMix Юрич</span>
+                        
+                        <span class="live-badge-side" aria-label="Live"></span>
+                        
+                    </a>
+                    
+                    <a href="/tv/watch/dak3767"
+                       data-channel-id="dak3767"
+                       class="sidebar-channel ">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/367?unique=2026-08-20+21%3A26%3A12.233828&amp;access_token=5eb8ee8a-8a44-4763-9f55-bfe6cdb9dae0" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">KinoMix Юрич 2</span>
+                        
+                        <span class="live-badge-side" aria-label="Live"></span>
+                        
+                    </a>
+                    
+                    <a href="/tv/watch/videoarsenal"
+                       data-channel-id="videoarsenal"
+                       class="sidebar-channel ">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/132?unique=2026-02-20+01%3A57%3A49.533570&amp;access_token=42dbd759-1434-4af9-96b3-e6d634113802" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">VideoArsenal</span>
+                        
+                        <span class="live-badge-side" aria-label="Live"></span>
+                        
+                    </a>
+                    
+                    <a href="/tv/watch/kinojam"
+                       data-channel-id="kinojam"
+                       class="sidebar-channel ">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/133?unique=2026-07-25+13%3A58%3A47.233805&amp;access_token=1b0e08fc-b6a2-4d5e-a842-a8e2d3cc67ba" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">Kino Jam</span>
+                        
+                        <span class="live-badge-side" aria-label="Live"></span>
+                        
+                    </a>
+                    
+                    <a href="/tv/watch/selecaotv"
+                       data-channel-id="selecaotv"
+                       class="sidebar-channel ">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/135?unique=2026-07-27+13%3A53%3A12.491531&amp;access_token=313f9f43-066e-401a-9645-4dead7dddb50" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">SeleCaoTV</span>
+                        
+                        <span class="live-badge-side" aria-label="Live"></span>
+                        
+                    </a>
+                    
+                    <a href="/tv/watch/selecaotv1"
+                       data-channel-id="selecaotv1"
+                       class="sidebar-channel ">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/136?unique=2026-07-27+13%3A53%3A27.708328&amp;access_token=1d33d5f2-8488-4625-bdda-098f544bce49" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">SeleCaoTV1</span>
+                        
+                        <span class="live-badge-side" aria-label="Live"></span>
+                        
+                    </a>
+                    
+                    <a href="/tv/watch/video_prokat"
+                       data-channel-id="video_prokat"
+                       class="sidebar-channel ">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/122?unique=2026-02-20+01%3A57%3A49.533570&amp;access_token=0951c630-f716-4483-8366-ffae49225224" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">Video_Prokat</span>
+                        
+                        <span class="live-badge-side" aria-label="Live"></span>
+                        
+                    </a>
+                    
+                    <a href="/tv/watch/movietoper"
+                       data-channel-id="movietoper"
+                       class="sidebar-channel ">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/123?unique=2026-07-25+14%3A22%3A30.153830&amp;access_token=4c53055d-6634-4781-a1e5-8be0b7bc16c6" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">MovieToper</span>
+                        
+                        <span class="live-badge-side" aria-label="Live"></span>
+                        
+                    </a>
+                    
+                    <a href="/tv/watch/timetohorror"
+                       data-channel-id="timetohorror"
+                       class="sidebar-channel ">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/124?unique=2026-07-25+13%3A44%3A26.077501&amp;access_token=f037e8a6-3dab-48b7-916a-625f52c1c10e" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">TimeToHorror</span>
+                        
+                        <span class="live-badge-side" aria-label="Live"></span>
+                        
+                    </a>
+                    
+                    <a href="/tv/watch/timetomovie"
+                       data-channel-id="timetomovie"
+                       class="sidebar-channel ">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/125?unique=2026-07-25+13%3A44%3A42.009275&amp;access_token=34d5bab6-6672-4e67-8ba3-eac6b4a5b0b0" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">TimeToMovie</span>
+                        
+                        <span class="live-badge-side" aria-label="Live"></span>
+                        
+                    </a>
+                    
+                    <a href="/tv/watch/blockbusterstime"
+                       data-channel-id="blockbusterstime"
+                       class="sidebar-channel ">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/126?unique=2026-02-20+01%3A57%3A49.533570&amp;access_token=2a7cd4ef-01dc-448f-9d01-128118de1baa" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">Blockbusters Time</span>
+                        
+                        <span class="live-badge-side" aria-label="Live"></span>
+                        
+                    </a>
+                    
+                    <a href="/tv/watch/cinematime"
+                       data-channel-id="cinematime"
+                       class="sidebar-channel ">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/226?unique=2026-07-27+13%3A37%3A32.858124&amp;access_token=b2c8a399-c663-4a02-b7fc-f3c1f186c698" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">Cinema Time</span>
+                        
+                        <span class="live-badge-side" aria-label="Live"></span>
+                        
+                    </a>
+                    
+                    <a href="/tv/watch/kinolampa"
+                       data-channel-id="kinolampa"
+                       class="sidebar-channel ">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/129?unique=2026-07-27+13%3A36%3A24.469000&amp;access_token=0064eb47-e70b-4d33-81b1-84bd304fb41b" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">kinolampa</span>
+                        
+                        <span class="live-badge-side" aria-label="Live"></span>
+                        
+                    </a>
+                    
+                    <a href="/tv/watch/perviryad"
+                       data-channel-id="perviryad"
+                       class="sidebar-channel ">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/167?unique=2026-02-20+01%3A57%3A49.533570&amp;access_token=77eb8084-5ba1-47ee-a11c-416e34cc979e" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">Пᛊየᛒьᵻӥ የጸሏ</span>
+                        
+                        <span class="live-badge-side" aria-label="Live"></span>
+                        
+                    </a>
+                    
+                    <a href="/tv/watch/vhs-forever"
+                       data-channel-id="vhs-forever"
+                       class="sidebar-channel ">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/181?unique=2026-02-20+01%3A57%3A49.533570&amp;access_token=a81ca619-cbf8-4dd0-bcd4-f69512a038b7" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">VHS Forever</span>
+                        
+                        <span class="live-badge-side" aria-label="Live"></span>
+                        
+                    </a>
+                    
+                    <a href="/tv/watch/vhs90e"
+                       data-channel-id="vhs90e"
+                       class="sidebar-channel ">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/307?unique=2026-05-26+05%3A44%3A04.883875&amp;access_token=dc8ba71e-5aa9-4382-a6ec-9834ea7ae601" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">ВИДЕОКАССЕТА</span>
+                        
+                        <span class="live-badge-side" aria-label="Live"></span>
+                        
+                    </a>
+                    
+                    <a href="/tv/watch/filmscope"
+                       data-channel-id="filmscope"
+                       class="sidebar-channel ">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/339?unique=2026-07-25+13%3A22%3A03.284209&amp;access_token=4fce0ff3-0f3c-4456-86cd-bdafdff6f683" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">Фильмоскоп</span>
+                        
+                        <span class="live-badge-side" aria-label="Live"></span>
+                        
+                    </a>
+                    
+                    <a href="/tv/watch/vb-all-in-one"
+                       data-channel-id="vb-all-in-one"
+                       class="sidebar-channel ">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/363?unique=2026-08-18+07%3A20%3A13.536964&amp;access_token=35a15753-cc7e-4388-b0fb-13285d78a8e6" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">VB-All-In-One</span>
+                        
+                        <span class="live-badge-side" aria-label="Live"></span>
+                        
+                    </a>
+                    
+                    <a href="/tv/watch/russerials"
+                       data-channel-id="russerials"
+                       class="sidebar-channel ">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/365?unique=2026-08-18+20%3A21%3A17.992894&amp;access_token=16e1ca9b-0136-4dd6-b3e2-0be1b0ddb7d9" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">VB-RusSerails</span>
+                        
+                        <span class="live-badge-side" aria-label="Live"></span>
+                        
+                    </a>
+                    
+                    <a href="/tv/watch/legion-tv"
+                       data-channel-id="legion-tv"
+                       class="sidebar-channel ">
+                        <img src="http://kinowalk.hopto.org/static-content/logo/386?unique=2026-08-26+10%3A31%3A11.854244&amp;access_token=2c0b425d-f923-4780-92b2-8bce032e3aee" alt="" loading="lazy" onerror="this.style.display='none'">
+                        <span class="sidebar-channel-name">LEGION TV</span>
+                        
+                    </a>
+                    
+                </div>
+            </aside>
+            <div class="player-section">
+                <div class="player-box" id="playerBox">
+                    <iframe
+                        id="playerFrame"
+                        src="https://live.vkvideo.ru/app/embed/kinowalk?autoplay=true&amp;stream_btn=false"
+                        sandbox="allow-scripts allow-same-origin allow-popups allow-presentation"
+                        allow="fullscreen; autoplay; encrypted-media; picture-in-picture; clipboard-write"
+                        referrerpolicy="no-referrer"
+                        title="Kinowalk_tv"
+                    ></iframe>
+                </div>
+            </div>
+            <div class="watch-bottom">
+                <div class="nav-bar">
+                    <div class="nav-group"></div>
+                    <div class="share-dropdown">
+                        <button type="button" class="nav-btn primary" id="shareToggle">🔗 Поделиться</button>
+                        <div class="share-menu" id="shareMenu">
+                            <a class="share-item" id="shareTelegram" target="_blank" rel="noopener">
+                                <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                                </svg>
+                                Telegram
+                            </a>
+                            <button type="button" class="share-item" id="shareCopy">
+                                <svg class="share-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                                <span id="shareCopyText">Копировать ссылку</span>
+                            </button>
+                            
+                            <button type="button" class="share-item" id="shareCopyHls" data-hls-url="http://kinowalk.hopto.org/kinowalk_live">
+                                <svg class="share-icon" xmlns="http://www.w3.org/2000/svg" aria-label="VLC" viewBox="0 0 40 40" width="40" height="40"><path d="m34.14 31.251-2.813-7.343c-.235-.781-1.015-1.251-1.797-1.251H10.468c-.781 0-1.563.469-1.797 1.251l-2.813 7.343c-.157.235-.157.547-.157.86a2.267 2.267 0 0 0 2.265 2.265h24.063a2.267 2.267 0 0 0 2.111-3.125M23.36 8.515 22.189 4.53a1.92 1.92 0 0 0-1.875-1.407h-.625c-.86 0-1.64.547-1.875 1.407l-1.171 3.985a24 24 0 0 0 6.719 0M20 14.297c-1.875 0-3.593-.157-5-.469l-1.485 5.079c1.563.625 3.828 1.015 6.485 1.015s4.921-.389 6.485-1.015l-1.563-5.079c-1.329.313-3.047.469-4.921.469" fill="#f7901e"/><path d="m24.921 13.828-1.563-5.313a24 24 0 0 1-6.719 0l-1.64 5.313c1.407.313 3.125.469 5 .469s3.593-.157 4.921-.469m-11.407 5.079-1.407 4.843c1.485 1.093 4.297 1.797 7.891 1.797s6.407-.703 7.891-1.797l-1.407-4.843c-1.563.625-3.828 1.015-6.485 1.015s-4.921-.389-6.485-1.015" fill="rgba(255,255,255,0.85)"/></svg>
+                                <span id="shareCopyTextHls">Ссылка m3u</span>
+                            </button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="channel-info">
+                    <img src="http://kinowalk.hopto.org/static-content/logo/370?unique=2026-08-22+02%3A23%3A45.911848&amp;access_token=d28a4b8e-a3c2-497b-8547-0754c45dadea" alt="Канал Kinowalk_tv - смотреть онлайн бесплатно" onerror="this.style.display='none'">
+                    <div class="channel-info-text">
+                        <h1>Kinowalk_tv</h1>
+                        <p>⭐️ Топ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-inner">
+            <span>Kinowalk &copy; 2026</span>
+            <a href="#" class="footer-link" id="footerInstallBtn">Установить приложение</a>
+        </div>
+    </footer>
+    <script>
+    (function(){
+        function updateChannel(data) {
+            var iframe = document.getElementById('playerFrame');
+            if (iframe) iframe.src = data.embed;
+            document.title = data.name + ' — смотреть онлайн бесплатно, прямой эфир';
+            var infoImg = document.querySelector('.channel-info img');
+            if (infoImg) { infoImg.src = data.logo; infoImg.alt = 'Канал ' + data.name + ' - смотреть онлайн бесплатно'; }
+            var infoH1 = document.querySelector('.channel-info-text h1');
+            if (infoH1) infoH1.textContent = data.name;
+            var infoP = document.querySelector('.channel-info-text p');
+            if (infoP) infoP.textContent = data.category_name;
+            var hlsBtn = document.getElementById('shareCopyHls');
+            if (hlsBtn) hlsBtn.dataset.hlsUrl = data.hls_url || '';
+            history.pushState({channelId: data.id}, '', '/tv/watch/' + data.id);
+            if (window.ym) ym(104014182, 'hit', '/tv/watch/' + data.id);
+        }
+
+        function setActiveChannel(channelId) {
+            var sidebar = document.getElementById('watchSidebar');
+            if (!sidebar) return;
+            sidebar.querySelectorAll('.sidebar-channel').forEach(function(link) {
+                link.classList.remove('active');
+                if (link.dataset.channelId === channelId) link.classList.add('active');
+            });
+        }
+
+        document.addEventListener('click', function(e) {
+            var link = e.target.closest('.sidebar-channel');
+            if (!link) return;
+            if (e.ctrlKey || e.metaKey || e.button !== 0) return;
+            e.preventDefault();
+            var channelId = link.dataset.channelId;
+            if (!channelId) return;
+            fetch('/tv/api/channel/' + channelId)
+                .then(function(r) { if (!r.ok) throw new Error('Network'); return r.json(); })
+                .then(function(data) {
+                    updateChannel(data);
+                    setActiveChannel(channelId);
+                })
+                .catch(function() { window.location.href = link.href; });
+        });
+
+        window.addEventListener('popstate', function(e) {
+            if (e.state && e.state.channelId) {
+                fetch('/tv/api/channel/' + e.state.channelId)
+                    .then(function(r) { return r.json(); })
+                    .then(function(data) {
+                        updateChannel(data);
+                        setActiveChannel(data.id);
+                    });
+            }
+        });
+
+        document.addEventListener('click', function(e) {
+            var toggle = e.target.closest('#shareToggle');
+            var menu = document.getElementById('shareMenu');
+            if (toggle && menu) { e.stopPropagation(); menu.classList.toggle('show'); return; }
+            if (menu && !menu.contains(e.target) && !e.target.closest('#shareToggle')) menu.classList.remove('show');
+        });
+
+        document.addEventListener('click', function(e) {
+            var copyBtn = e.target.closest('#shareCopy');
+            if (!copyBtn) return;
+            e.preventDefault();
+            var url = window.location.href;
+            var copyText = document.getElementById('shareCopyText');
+            if (!copyText) return;
+            var originalText = copyText.textContent;
+            navigator.clipboard.writeText(url).catch(function(err) {
+                var ta = document.createElement('textarea'); ta.value = url;
+                document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
+            }).finally(function() {
+                copyText.textContent = 'Скопировано!';
+                var icon = copyBtn.querySelector('.share-icon');
+                if (icon) icon.style.stroke = '#22c55e';
+                setTimeout(function() {
+                    copyText.textContent = originalText;
+                    if (icon) icon.style.stroke = '';
+                    var menu = document.getElementById('shareMenu');
+                    if (menu) menu.classList.remove('show');
+                }, 1500);
+            });
+        });
+
+        document.addEventListener('click', function(e) {
+            var copyBtn = e.target.closest('#shareCopyHls');
+            if (!copyBtn) return;
+            e.preventDefault();
+            var hls_url = copyBtn.dataset.hlsUrl || '';
+            var copyText = document.getElementById('shareCopyTextHls');
+            if (!copyText) return;
+            var originalText = copyText.textContent;
+            navigator.clipboard.writeText(hls_url).catch(function(err) {
+                var ta = document.createElement('textarea'); ta.value = hls_url;
+                document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
+            }).finally(function() {
+                copyText.textContent = 'Скопировано!';
+                setTimeout(function() {
+                    copyText.textContent = originalText;
+                    var menu = document.getElementById('shareMenu');
+                    if (menu) menu.classList.remove('show');
+                }, 1500);
+            });
+        });
+
+        document.addEventListener('click', function(e) {
+            var tgBtn = e.target.closest('#shareTelegram');
+            if (!tgBtn) return;
+            var url = window.location.href;
+            var nameEl = document.querySelector('.channel-info-text h1');
+            var text = '👀 Смотрю ' + (nameEl ? nameEl.textContent : 'канал') + ' онлайн бесплатно на Kinowalk 🍿🎬';
+            tgBtn.href = 'https://t.me/share/url?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(text);
+        });
+    })();
+    </script>
+    <script src="https://kinowalk.hopto.org/tv-static/js/app.js?v=1.4"></script>
+</body>
+</html>
